@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
-  pageTitleSuffix: ""
+  pageTitle: NVNisation
+  pageTitleSuffix: " • Learn. Build. Share."
   enableSPA: true
   enablePopovers: true
   analytics:
-    provider: plausible
+    provider: null
   locale: en-US
-  baseUrl: nvnisation.pages.dev
+  baseUrl: nvnisation.njhajhoriya.workers.dev
   ignorePatterns:
     - private
     - templates
@@ -148,7 +148,7 @@ plugins:
       position: left
       priority: 50
   - source: github:quartz-community/graph
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 10
@@ -192,7 +192,7 @@ plugins:
       priority: 30
       group: toolbar
   - source: github:quartz-community/reader-mode
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -215,8 +215,10 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        Home: /
+        About: /about
+        Contact: /contact
+        GitHub: https://github.com/imenvn/nvnisation
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
